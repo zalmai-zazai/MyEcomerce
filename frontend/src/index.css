@@ -7,13 +7,69 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: black;
-  padding: 1rem;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main {
+  margin: 1rem;
+}
+.product {
+  border: solid 1px black;
+  margin: 1rem;
+  width: 20rem;
+  height: 38rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card-title {
+  padding: 0.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.product img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.product button {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-header a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+.site-container {
+  min-height: 100dvh;
+}
+main {
+  flex: 1;
+}
+.rating span {
+  color: goldenrod;
+}
+
+.img-large {
+  max-width: 100%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
 }
